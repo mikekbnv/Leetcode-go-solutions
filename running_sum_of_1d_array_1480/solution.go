@@ -1,0 +1,8 @@
+package running_sum_of_1d_array_1480
+
+func runningSum(nums []int) []int {
+	for i := 1; i < len(nums); i++ {
+		nums[i] += nums[i-1]
+	}
+	return nums
+}
