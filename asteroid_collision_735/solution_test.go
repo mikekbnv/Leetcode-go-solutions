@@ -2,7 +2,6 @@ package asteroid_collision_735
 
 import (
 	"testing"
-
 	"github.com/stretchr/testify/assert"
 )
 
