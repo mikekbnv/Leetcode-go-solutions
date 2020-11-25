@@ -1,39 +1,24 @@
-package basic_calculator_II
+package find_first_and_last_position_of_element_in_sorted_array_34
 
-import (
-	"fmt"
-	"strings"
-)
-
-func calculate(s string) int {
-	if len(s) == 0 {
-		return 0
-	}
-	s = strings.ReplaceAll(s, " ", "")
-	prev, curr, sign, ans := 0, 0, rune('+'), 0
-	for i, v := range s {
-		if v >= '0' && v <= '9' {
-			curr = curr*10 + int(v-'0')
-		}
-
-		if (v < '0' || v > '9') || i == len(s)-1 {
-			if sign == '+' {
-				ans = ans + prev
-				prev = curr
-			} else if sign == '-' {
-				ans = ans + prev
-				prev = -curr
-			} else if sign == '*' {
-				fmt.Println("1")
-				prev = prev * curr
-			} else if sign == '/' {
-				prev = prev / curr
+func searchRange(nums []int, target int) []int {
+	var p = []int{-1, -1}
+	for i := 0; i < len(nums); i++ {
+		if nums[i] == target {
+			p[0] = i
+			for k := i; k < len(nums); k++ {
+				if nums[k] != target {
+					p[1] = k - 1
+					return p
+				}
 			}
-
-			sign = rune(s[i])
-			curr = 0
+			break
 		}
 	}
-	ans = ans + prev
-	return ans
+	if len(nums) == 0 {
+		return p
+	}
+	if nums[len(nums)-1] == target {
+		p[1] = len(nums) - 1
+	}
+	return p
 }

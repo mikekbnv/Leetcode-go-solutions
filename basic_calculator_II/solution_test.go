@@ -1,4 +1,4 @@
-package find_first_and_last_position_of_element_in_sorted_array_34
+package basic_calculator_II_227
 
 import (
 	"testing"
@@ -6,45 +6,42 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_runningSum(t *testing.T) {
+func Test_calculate(t *testing.T) {
 	type args struct {
-		arr []int
-		target int
+		str string
 	}
+
 	tests := []struct {
 		name string
 		args args
-		want []int
+		want int
 	}{
 		{
-			name: "find first and last position of element in sorted array",
+			name: "basic calculator",
 			args: args{
-				arr: []int{
-					5, 7, 7, 8, 8, 10,
-				},
-				target: 8,
+				str: "3+2*2",
 			},
-			want: []int{
-				3, 4,
-			},
+			want: 7,
 		},
 		{
-			name: "find first and last position of element in sorted array",
+			name: "basic calculator",
 			args: args{
-				arr: []int{
-					5, 7, 7, 8, 8, 10,
-				},
-				target: 6,
+				str: "3/2",
 			},
-			want: []int{
-				-1, -1,
+			want: 1,
+		},
+		{
+			name: "basic calculator",
+			args: args{
+				str: "3+5 / 2",
 			},
+			want: 5,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			assert.Equal(t, tt.want, searchRange(tt.args.arr, tt.args.target))
+			assert.Equal(t, tt.want, calculate(tt.args.str))
 		})
 	}
 }

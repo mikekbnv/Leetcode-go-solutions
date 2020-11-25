@@ -1,36 +1,29 @@
-# 227. Basic Calculator II
+# 34. Find First and Last Position of Element in Sorted Array
 
-https://leetcode.com/problems/basic-calculator-ii/
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 # Description
 
-Implement a basic calculator to evaluate a simple expression string.
+Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
 
-The expression string contains only non-negative integers, +, -, *, / operators and empty spaces . The integer division should truncate toward zero.
+If target is not found in the array, return [-1, -1].
+
+Follow up: Could you write an algorithm with O(log n) runtime complexity?
 
 Example 1:
 
 ```
 Input:
-"3+2*2"
+[5,7,7,8,8,10], target = 8
 Output:
-3
+[3, 4]
 ```
 
 Example 2:
 
 ```
 Input:
-" 3/2 "
+[5,7,7,8,8,10], target = 6
 Output:
-1
-```
-
-Example 3:
-
-```
-Input:
-" 3 + 5 / 2 "
-Output:
-5
+[-1, -1]
 ```
