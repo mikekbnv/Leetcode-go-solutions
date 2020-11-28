@@ -13,6 +13,7 @@ If your current score is at least 1, you may play the ith token face down, gaini
 Each token may be played at most once and in any order. You do not have to play all the tokens.
 
 Return the largest possible score you can achieve after playing any number of tokens.
+
 Example 1:
 
 ```
