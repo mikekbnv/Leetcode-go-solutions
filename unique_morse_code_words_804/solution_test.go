@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_runningSum(t *testing.T) {
+func Test_uniqueMorse(t *testing.T) {
 	type args struct {
 		arr []string
 	}

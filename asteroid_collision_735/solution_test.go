@@ -2,10 +2,11 @@ package asteroid_collision_735
 
 import (
 	"testing"
+
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_runningSum(t *testing.T) {
+func Test_asteroidColl(t *testing.T) {
 	type args struct {
 		arr []int
 	}

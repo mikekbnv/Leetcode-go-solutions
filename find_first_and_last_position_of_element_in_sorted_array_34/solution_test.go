@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_searchRange(t *testing.T) {
+func Test_findfirstandlast(t *testing.T) {
 	type args struct {
 		arr    []int
 		target int

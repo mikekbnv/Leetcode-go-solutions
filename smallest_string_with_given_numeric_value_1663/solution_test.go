@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_runningSum(t *testing.T) {
+func Test_smallestString(t *testing.T) {
 	type args struct {
 		n int
 		k int
