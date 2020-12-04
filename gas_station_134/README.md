@@ -33,6 +33,7 @@ Example 2:
 Input:
 gas  = [2,3,4]
 cost = [3,4,3]
+
 Output:
 -1
 ```
