@@ -19,7 +19,7 @@ Example 2:
 
 ```
 Input:
-Input: s = "rat", t = "car"
+s = "rat", t = "car"
 Output:
 false
 ```
