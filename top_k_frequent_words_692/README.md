@@ -12,7 +12,7 @@ Example 1:
 
 ```
 Input:
- ["i", "love", "leetcode", "i", "love", "coding"], k = 2
+["i", "love", "leetcode", "i", "love", "coding"], k = 2
 Output:
 ["i", "love"]
 ```
