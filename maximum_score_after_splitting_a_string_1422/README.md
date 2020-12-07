@@ -24,6 +24,6 @@ Example 2:
 Input:
 s = "00111"
 Output:
-3
+5
 
 ```
