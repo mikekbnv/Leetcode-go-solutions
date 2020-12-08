@@ -24,5 +24,4 @@ Input:
 root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10
 Output:
 23
-
 ```

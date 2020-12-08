@@ -15,7 +15,6 @@ Input:
 s = "011101"
 Output:
 5
-
 ```
 
 Example 2:
@@ -25,5 +24,4 @@ Input:
 s = "00111"
 Output:
 5
-
 ```
