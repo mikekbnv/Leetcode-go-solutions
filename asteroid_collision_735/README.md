@@ -26,7 +26,6 @@ Input:
 asteroids = [8,-8]
 Output:
 []
-
 ```
 
 Example 3:
@@ -36,5 +35,4 @@ Input:
 asteroids = [10,2,-5]
 Output:
 [10]
-
 ```
